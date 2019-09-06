@@ -16,6 +16,9 @@ int cross(queue<int> left, queue<int> right, int l) {
 			a += right.front();
 			right.pop();
 		}
+		if (!left.empty() || !right.empty() || a > 0){
+		    res++;
+		}
 	}
 	
 	return res;
